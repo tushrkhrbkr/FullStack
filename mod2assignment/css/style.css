@@ -1,60 +1,94 @@
-/********** Base styles **********/
+/* Base Styles */
+
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
   font-family: Verdana, Arial, Tahoma, Serif;
-  font-color: #FFFFFF;
+  font-color: #000000;
 }
+
 h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 175%;
+	text-align: center;
+}
+
+body {
+	background-color: lightblue;
+
 }
 
 p {
-  border: 1px solid black;
-  width: 100px;
-  height: 25px;
-  /*margin-right: auto;
-  margin-left: auto;*/
-  margin-top: 0px;
-  text-align: center;
-  float: right;
-  font-size: 125%;
+	padding: 10px;
+	margin: 0;
 }
 
-#p1 {
-  background-color: #00FF00;
-}
-#p2 {
-  background-color: #FF0000;
-}
-#p3 {
-  background-color: #DEB887;
-}
-
-section{
-  margin: 10px;
-  text-align: left;
-  clear: both;
-
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 
-.internal{
-  margin: 10px;
-  border: 1px solid black;
-  background-color: grey;
+section {
+	border:	1px solid black;
+	background-color: grey;
+	width: 100%;
+	height: 200px;
+	color: black;
+	position: relative;
+	overflow: auto;
 }
 
-/* Simple Responsive Framework. */
+#Veg {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-weight: bold;
+	font-size: 125%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+	background-color: #00FF00;
+}
+
+#NonVeg {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-weight: bold;
+	font-size: 125%;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
+	background-color: #FF0000;
+}
+
+#Dessert {
+	border: 1px solid black;
+	text-align: center;
+	width: 30%;
+	margin-left: 70%;
+	font-weight: bold;
+	font-size: 125%;
+	margin-bottom: 0;
+	margin-top: 0;
+	background-color: #DEB887;
+	padding: 5px;
+}
+
 .row {
-  width: 100%;
+	width: 100%;
 }
 
-/********** Large devices only **********/
+/* Desktop view */
+
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
+
   .col-lg-1 {
     width: 8.33%;
   }
@@ -91,13 +125,16 @@ section{
   .col-lg-12 {
     width: 100%;
   }
+
 }
 
-/********** Medium devices only **********/
+/* Tablet view */
+
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
+
   .col-md-1 {
     width: 8.33%;
   }
@@ -136,11 +173,13 @@ section{
   }
 }
 
-/********** Small devices only **********/
-@media (max-width: 767px) {
+/* Mobile view */
+
+@media (max-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
+ 	float: left;
   }
+
   .col-sm-1 {
     width: 8.33%;
   }
